@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".materia.materia_index">
+
+    <EditText
+        android:id="@+id/txtNombreMateria"
+        android:layout_width="321dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nombre de Asignatura"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="152dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#28A745"
+            android:text="Agregar"
+            app:backgroundTint="#28A745" />
+
+        <Button
+            android:id="@+id/btnRecargar"
+            android:layout_width="149dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="10dp"
+            android:text="Recargar" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="match_parent"
+                android:layout_height="530dp">
+
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
